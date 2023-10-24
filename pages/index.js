@@ -9,7 +9,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Je. I'm a software engineer and infrastructure nerd. I currently work with MERN, Next.js, Python, Django, and Flask. After a few months, I want to transition to web3 technologies. Learning Solidity will be the first step.
+        <p>Hello, I'm <strong>Je</strong>. I'm a software engineer and infrastructure nerd. I currently work with MERN, Next.js, Python, Django, and Flask. After a few months, I want to transition to web3 technologies. Learning Solidity will be the first step.
         You can contact me on <a href='https://twitter.com/simyora'>Twitter</a>.
         </p>
         <p>
