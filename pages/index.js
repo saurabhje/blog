@@ -9,12 +9,14 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Je. I'm a software Enginer and thats it i guess, I play games sometimes.
-          You can contact me on <a href='https://twitter.com/simyora'>Twitter</a>.
+        <p>Hello, I'm Je. I'm a software engineer and infrastructure nerd. I currently work with MERN, Next.js, Python, Django, and Flask. After a few months, I want to transition to web3 technologies. Learning Solidity will be the first step.
+        You can contact me on <a href='https://twitter.com/simyora'>Twitter</a>.
         </p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          (This is a sample and minimalist blog - created using{' '}
+          <a href="https://nextjs.org/learn">NextJS</a> and
+          <a href="https://ghost.org/"> Ghost</a>
+          )
         </p>
       </section>
     </Layout>
