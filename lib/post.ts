@@ -10,3 +10,15 @@ export const getSortedPostData = async () => {
   const data = await getData() as Post[];
   return data;
 };
+
+export const getAllIds = async () => {
+  const query = '*[_type == "post"].id';
+  const data = await client.fetch(query);
+  const paths = data.map((id: any) => ({
+      params: {
+          id
+      }
+  }));
+
+  return paths;
+}

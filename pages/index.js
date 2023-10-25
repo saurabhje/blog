@@ -9,7 +9,7 @@ export async function getStaticProps() {
   return {
     props: {
       allPostsData,
-    },
+    }
   };
 }
 
@@ -37,7 +37,7 @@ export default function Home({ allPostsData }) {
             <li className={utilStyles.listItem} key={_id}>
               {title}
               <br />
-              {_id}
+              {id}
               <br />
               {date}
             </li>

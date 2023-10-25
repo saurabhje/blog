@@ -14,6 +14,11 @@ export default {
         title: 'Date',
       },
       {
+        name: 'id',
+        type: 'string',
+        title: 'UrlID'
+      },
+      {
         name: 'content',
         type: 'array',
         title: 'Content',
