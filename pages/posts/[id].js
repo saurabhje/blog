@@ -2,6 +2,7 @@ import { PortableText } from "@portabletext/react";
 import Layout from "../../components/layout";
 import { getAllIds , getIdPost} from "../../lib/post";
 import Head from 'next/head';
+import Date from "../../components/date";
 
 export async function getStaticPaths() {
     const paths = await getAllIds();
@@ -28,7 +29,7 @@ export async function getStaticProps({ params }) {
             </Head>
             {postData.title}
             <br />
-            {postData.date}
+            <Date dateString={postData.date} />
             <br />
             <PortableText value={postData.content} components={{}}/>
       </Layout>
