@@ -1,3 +1,4 @@
+import { PortableText } from "@portabletext/react";
 import Layout from "../../components/layout";
 import { getAllIds , getIdPost} from "../../lib/post";
 
@@ -23,10 +24,9 @@ export async function getStaticProps({ params }) {
       <Layout>
         {postData.title}
         <br />
-        {postData.content}
-        <br />
         {postData.date}
-
+        <br />
+        <PortableText value={postData.content} components={{}}/>
       </Layout>
     );
   }
