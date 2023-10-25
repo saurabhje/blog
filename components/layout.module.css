@@ -1,5 +1,5 @@
 .container {
-  max-width: 36rem;
+  max-width: 50rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 }
@@ -11,5 +11,6 @@
 }
 
 .backToHome {
+  font-size: larger;
   margin: 3rem 0 0;
 }
