@@ -26,18 +26,18 @@ export default function Home({ allPostsData }) {
         <p>
           (This is a sample and minimalist blog - created using{' '}
           <a href="https://nextjs.org/learn">NextJS</a> and
-          <a href="https://ghost.org/"> Ghost</a>
+          <a href="https://www.sanity.io/"> Sanity </a>
           )
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+          {allPostsData.map(({ _id, date, title }) => (
+            <li className={utilStyles.listItem} key={_id}>
               {title}
               <br />
-              {id}
+              {_id}
               <br />
               {date}
             </li>
