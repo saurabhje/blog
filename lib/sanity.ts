@@ -1,8 +1,7 @@
-import { createClient } from "next-sanity"
-const project = process.env['PROJECT_ID'];
-const projectId = project
+import { createClient } from "next-sanity";
+const projectId = 'zwfkz1cc'
 const dataset = 'production'
-const apiVersion = '23-01-01'
+const apiVersion = '2023-01-01'
 
 export const client = createClient({
     projectId,
