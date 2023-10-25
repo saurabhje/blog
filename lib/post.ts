@@ -8,11 +8,5 @@ export const getSortedPostData = async () => {
     return data;
   }
   const data = await getData() as Post[];
-  return data.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  return data;
 };
