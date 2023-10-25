@@ -37,7 +37,7 @@ export default function Home({ allPostsData }) {
             <li className={utilStyles.listItem} key={_id}>
               {title}
               <br />
-              {id}
+              {_id}
               <br />
               {date}
             </li>
