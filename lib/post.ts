@@ -19,6 +19,11 @@ export const getAllIds = async () => {
           id
       }
   }));
-
   return paths;
+}
+
+export const getIdPost = async (postid) =>{
+  const query = `*[_type == "post" && id == $id][0]`;
+  const postData = await client.fetch(query, { id: postid });
+  return postData as Post;
 }

@@ -16,7 +16,7 @@ export default {
       {
         name: 'id',
         type: 'string',
-        title: 'UrlID'
+        title: 'ID'
       },
       {
         name: 'content',

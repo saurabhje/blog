@@ -1,6 +1,5 @@
 import Layout from "../../components/layout";
-import { client } from "../../lib/sanity";
-import { getAllIds } from "../../lib/post";
+import { getAllIds , getIdPost} from "../../lib/post";
 
 export async function getStaticPaths() {
     const paths = await getAllIds();
@@ -11,24 +10,25 @@ export async function getStaticPaths() {
   }
 
 export async function getStaticProps({ params }) {
-    const query = `*[_type == "post" && id == $id][0]`;
-    const postData = await client.fetch(query, { id: params.id });
+    const postData = await getIdPost(params.id);
     return {
       props: {
-        post: postData,
+         postData
       },
     };
   }
 
-export default function Post({ postData }) {
+  export default function Post({ postData }) {
     return (
       <Layout>
         {postData.title}
         <br />
-        {postData.id}
+        {postData.content}
         <br />
         {postData.date}
+
       </Layout>
     );
   }
+  
   
