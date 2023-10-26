@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Personal Blog of Saurabh Je Singh "
+          content="Personal Blog of Saurabh Je Singh"
         />
         <meta
           property="og:image"
