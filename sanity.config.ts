@@ -1,5 +1,8 @@
 import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
+import {deskTool } from 'sanity/desk'
+import {visionTool} from '@sanity/vision'
+import project from './sanity/schemas/project-schema';
+
 
 const config = defineConfig({
   name: 'default',
@@ -8,9 +11,10 @@ const config = defineConfig({
   projectId: 'zwfkz1cc',
   dataset: 'production',
   apiVersion : '2023-10-24',
-  plugins: [deskTool()],
+  plugins: [deskTool() , visionTool()],
   
-  basePath: '/admin'
+  basePath: '/admin',
+  schema: { types: [project] }
 })
 
 export default config;

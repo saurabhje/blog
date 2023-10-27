@@ -14,3 +14,9 @@
   font-size: larger;
   margin: 3rem 0 0;
 }
+@media screen and (max-width: 450px) {
+  .backToHome{
+    font-size: small;
+  }
+}
+

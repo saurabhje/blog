@@ -3,14 +3,14 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
-import { getSortedPostData } from '../lib/post';
+import { getSortedPostData } from '../sanity/sanity.utils';
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostData();
   return {
     props: {
       allPostsData,
-    }
+    },
   };
 }
 
@@ -21,8 +21,16 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm <strong>Je</strong>. I'm a software engineer and infrastructure nerd. I currently work with MERN, Next.js, Python, Django, and Flask. After a few months, I want to transition to web3 technologies. Learning Solidity will be the first step.
-        You can contact me on <a href='https://twitter.com/simyora'>Twitter</a>.
+        <p>
+          Greetings, I'm <strong>Je</strong>, a software engineer and infrastructure enthusiast, dedicated to sculpting development environments that embody purity, efficiency, and the disciplined essence of a monk's haven.
+        </p>
+        <p>
+          My objective isn't entangled in elaborate graphics or exceptional websites; I'm an advocate for forging applications that are both <strong>minimal</strong> yet irresistibly captivating. I hold a deep reverence for the elegance of <strong>efficiency</strong>, <strong>the beauty of cleanliness</strong>, and the artistry of <i>complexity</i> in <i>functionalities</i>.
+        </p>
+          When I'm not plumbing the depths of the tech universe, I'm captivated by the enigmatic world of quantum mechanics. The idea of <strong>web3</strong> and <strong>decentralization</strong> holds an irresistible allure for me, and I'm on the brink of a thrilling transition into this uncharted domain. My inaugural stride in this direction is the acquisition of Solidity, a language that unlocks a portal to a realm teeming with unexplored prospects.
+        <p>
+          In a universe often besieged by intricacy, I'm here to champion the ideals of <strong>simplicity</strong>, <strong>efficiency</strong>,<strong> scalable</strong> and the allure of intricate functionality. Join me on this journey, where we celebrate the craft of forging applications that are irresistibly captivating and artfully intricate.
+          You can contact me on <a href='https://twitter.com/saurabhjesingh'>Twitter</a>.
         </p>
         <p>
           (This is a sample and minimalist blog - created using{' '}
@@ -34,9 +42,9 @@ export default function Home({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+          {allPostsData.map(({ slug, date, title , _id}) => (
+            <li className={utilStyles.listItem} key={_id}>
+              <Link href={`/posts/${slug.current}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
