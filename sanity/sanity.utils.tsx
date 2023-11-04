@@ -3,7 +3,7 @@ import { Post } from "./interface";
 
 export const getSortedPostData = async () => {
   async function getData() {
-    const query = '*[_type == "project"]';
+    const query = '*[_type == "project"] | order(date desc)';
     const data = await Client.fetch(query);
     return data;
   }
