@@ -16,6 +16,7 @@ export default function Layout({ children, home }) {
           name="description"
           content="Personal Blog of Saurabh Je Singh"
         />
+        <meta name="google-adsense-account" content="ca-pub-4293736310804112" />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
