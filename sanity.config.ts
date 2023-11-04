@@ -12,7 +12,7 @@ const config = defineConfig({
   dataset: 'production',
   apiVersion : '2023-10-24',
   plugins: [deskTool() , visionTool()],
-  
+  useCdn: false,
   basePath: '/admin',
   schema: { types: [project] }
 })
