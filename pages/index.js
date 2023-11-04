@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
 import { getSortedPostData } from '../sanity/sanity.utils';
+import { siteTitle } from '../components/layout';
 
 export async function getServerSideProps() {
   const allPostsData = await getSortedPostData();
@@ -45,7 +46,7 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ slug, date, title , _id}) => (
             <li className={utilStyles.listItem} key={_id}>
-              <Link href={`/posts/${slug.current}`}>{title}</Link>
+              <Link href={`/${slug.current}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
