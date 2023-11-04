@@ -23,17 +23,19 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          Greetings, I'm <strong>Je</strong>, a software engineer and infrastructure enthusiast, dedicated to sculpting development environments that embody purity, efficiency, and the disciplined essence of a monk's haven.
-        </p>
-        <p>
-          My objective isn't entangled in elaborate graphics or exceptional websites; I'm an advocate for forging applications that are both <strong>minimal</strong> yet irresistibly captivating. I hold a deep reverence for the elegance of <strong>efficiency</strong>, <strong>the beauty of cleanliness</strong>, and the artistry of <i>complexity</i> in <i>functionalities</i>.
-        </p>
-          When I'm not plumbing the depths of the tech universe, I'm captivated by the enigmatic world of quantum mechanics. The idea of <strong>web3</strong> and <strong>decentralization</strong> holds an irresistible allure for me, and I'm on the brink of a thrilling transition into this uncharted domain. My inaugural stride in this direction is the acquisition of Solidity, a language that unlocks a portal to a realm teeming with unexplored prospects.
-        <p>
-          In a universe often besieged by intricacy, I'm here to champion the ideals of <strong>simplicity</strong>, <strong>efficiency</strong>,<strong> scalable</strong> and the allure of intricate functionality. Join me on this journey, where we celebrate the craft of forging applications that are irresistibly captivating and artfully intricate.
-          You can contact me on <a href='https://twitter.com/saurabhjesingh'>Twitter</a> and <a href='https://www.linkedin.com/in/saurabhje/'>LinkedIn</a> .
-        </p>
+      <p>
+        Hey there! I'm <strong>Je</strong>, a software engineer who enjoys creating things. I'm all about crafting apps that are simple, efficient, and just plain awesome.
+      </p>
+      <p>
+        I'm not a fan of flashy graphics or complicated websites. I prefer to keep things clean and minimal while ensuring they're enjoyable to use. Imagine it as making cool stuff without the unnecessary complexity.
+      </p>
+      <p>
+        When I'm not immersed in the tech world, I'm exploring the intriguing realm of quantum mechanics. I'm also thrilled about the concept of <strong>web3</strong> and <strong>decentralization</strong>. I'm on a journey to grasp the fundamentals of web3, which promises a world of exciting possibilities.
+      </p>
+      <p>
+        In a world filled with <i><strong>complexity</strong></i>, I prioritize <i><strong>simplicity</strong></i>, <i><strong>efficiency</strong></i>and <i>scalability</i>(lies,that is something I'm still learning). Join me on this adventure as we create fantastic apps that are user-friendly and clever. Feel free to reach out to me on <a href='https://twitter.com/saurabhjesingh'>Twitter</a> and <a href='https://www.linkedin.com/in/saurabhje/'>LinkedIn</a>. And don't worry, I'm not too serious – I'm always up for a good laugh. 😄
+      </p>
+
         <p>
           (This is a simple and minimalist blog - created using{' '}
           <a href="https://nextjs.org/learn">NextJS</a> and
