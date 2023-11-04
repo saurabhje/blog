@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Date from '../components/date';
 import { getSortedPostData } from '../sanity/sanity.utils';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const allPostsData = await getSortedPostData();
   return {
     props: {
