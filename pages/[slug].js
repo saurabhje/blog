@@ -15,6 +15,10 @@ export async function getServerSideProps({ params }) {
 }
 
 export default function Post({ postData }) {
+  const components = {
+    // Define the 'image' block type component
+    image: Image, // Replace 'Image' with your actual image component
+  };
   return (
     <Layout>
       <Head>
