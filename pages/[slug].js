@@ -30,7 +30,7 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <div className="articleText">
-          <PortableText value={postData.content} components={{}} />
+          <PortableText value={postData.content} components={{components}} />
         </div>
       </article>
     </Layout>
