@@ -30,22 +30,16 @@ const project = {
             of: [
                 { type: 'block' },
                 {
-                    type: 'image',
-                    fields: [
-                        {
-                            name: 'image',
-                            title: 'Image',
-                            type: 'image',
-                            options: {
-                                hotspot: true, // if you want to allow hotspot selection
-                            }
-                        },
-                        {
-                            name: 'caption',
-                            title: 'Caption',
-                            type: 'string',
-                        },
-                    ],
+                  type: 'image',
+                  fields: [
+                    { name : 'alt',
+                      title: 'Alt',
+                      type: 'string',
+                    }
+                  ],
+                  options: {
+                    hotspot: true
+                  }
                 },
             ],
         },

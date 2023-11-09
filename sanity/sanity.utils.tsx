@@ -1,5 +1,8 @@
 import Client from "./sanity";
 import { Post } from "./interface";
+import ImageUrlBuilder  from "@sanity/image-url";
+
+const builder = ImageUrlBuilder(Client);
 
 export const getSortedPostData = async () => {
   async function getData() {
@@ -10,7 +13,6 @@ export const getSortedPostData = async () => {
   const data = await getData() as Post[];
   return data;
 };
-
 
 
 export const getAllIds = async () => {
@@ -24,9 +26,12 @@ export const getAllIds = async () => {
   return paths;
 }
 
-
 export const getIdPost = async (slug: any) => {
   const query = `*[_type == "project" && slug.current == $slug][0]`;
   const postData = await Client.fetch(query, { slug: slug });
   return postData as Post;
+}
+
+export function imageUrl(source: any){
+  return builder.image(source);
 }

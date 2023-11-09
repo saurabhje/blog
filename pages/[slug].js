@@ -1,10 +1,10 @@
 import { PortableText } from "@portabletext/react";
 import Layout , { siteTitle } from "../components/layout";
-import { getIdPost } from "../sanity/sanity.utils";
+import { getIdPost,ImageUrl } from "../sanity/sanity.utils";
 import Head from 'next/head';
 import Date from "../components/date";
 import utilStyles from "../styles/utils.module.css";
-
+import Image from "next/image";
 export async function getServerSideProps({ params }) {
   const postData = await getIdPost(params.slug);
   return {
@@ -14,11 +14,19 @@ export async function getServerSideProps({ params }) {
   };
 }
 
-export default function Post({ postData }) {
+export default function Post ({ postData }) {
   const components = {
-    // Define the 'image' block type component
-    image: Image, // Replace 'Image' with your actual image component
+    types: {
+      image: ({ props }) => {
+        console.log('Image Component Props:', props);
+        return (
+          <Image src={ImageUrl(props).url()} alt="image" />
+        );
+      },
+    },
   };
+  console.log(postData.content)
+  
   return (
     <Layout>
       <Head>
@@ -30,7 +38,7 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <div className="articleText">
-          <PortableText value={postData.content} components={{components}} />
+        <PortableText value={postData.content} components={components} />
         </div>
       </article>
     </Layout>
