@@ -16,7 +16,6 @@ export async function getServerSideProps({ params }) {
 }
 
 export default function Post({ postData }) {
-  console.log(postData.content)
   const PortableTextComponent = {
     types: {
       image: ({ value }) => (
