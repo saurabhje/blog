@@ -1,10 +1,11 @@
 import { PortableText } from "@portabletext/react";
-import Layout , { siteTitle } from "../components/layout";
-import { getIdPost,ImageUrl } from "../sanity/sanity.utils";
+import Layout, { siteTitle } from "../components/layout";
+import { getIdPost, urlFor } from "../sanity/sanity.utils"; // Import imageUrl correctly
 import Head from 'next/head';
 import Date from "../components/date";
 import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
+
 export async function getServerSideProps({ params }) {
   const postData = await getIdPost(params.slug);
   return {
@@ -14,19 +15,24 @@ export async function getServerSideProps({ params }) {
   };
 }
 
-export default function Post ({ postData }) {
-  const components = {
+export default function Post({ postData }) {
+  console.log(postData.content)
+  const PortableTextComponent = {
     types: {
-      image: ({ props }) => {
-        console.log('Image Component Props:', props);
-        return (
-          <Image src={ImageUrl(props).url()} alt="image" />
-        );
-      },
+      image: ({ value }) => (
+        
+        <Image
+          src={urlFor(value).url()}
+          className="articleImage"
+          alt="Image"
+          width={800}
+          height={800}
+        />
+      ),
     },
   };
-  console.log(postData.content)
-  
+
+
   return (
     <Layout>
       <Head>
@@ -38,7 +44,7 @@ export default function Post ({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <div className="articleText">
-        <PortableText value={postData.content} components={components} />
+          <PortableText value={postData.content} components={PortableTextComponent} />
         </div>
       </article>
     </Layout>

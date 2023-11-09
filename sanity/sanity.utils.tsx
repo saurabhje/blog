@@ -32,6 +32,6 @@ export const getIdPost = async (slug: any) => {
   return postData as Post;
 }
 
-export function imageUrl(source: any){
+export function urlFor(source: any) {
   return builder.image(source);
 }

@@ -37,9 +37,6 @@ const project = {
                       type: 'string',
                     }
                   ],
-                  options: {
-                    hotspot: true
-                  }
                 },
             ],
         },

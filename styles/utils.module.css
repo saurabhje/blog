@@ -64,6 +64,11 @@
   font-size: 1.2rem;
   color: #666;
 }
+
+.articleImage{
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 450px) {
   .headingXl{
     font-size: 1.3rem;
