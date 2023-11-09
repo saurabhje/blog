@@ -23,7 +23,7 @@ export default function Post({ postData }) {
         
         <Image
           src={urlFor(value).url()}
-          className="articleImage"
+          className={utilStyles.articleImage}
           alt="Image"
           width={800}
           height={800}

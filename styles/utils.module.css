@@ -66,7 +66,7 @@
 }
 
 .articleImage{
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 450px) {
@@ -89,5 +89,8 @@
   }
   .lightText {
     font-size: 0.8rem;
+  }
+  .articleImage{
+    border-radius: 5px;
   }
 }
