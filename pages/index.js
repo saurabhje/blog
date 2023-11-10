@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
         When I'm not immersed in the tech world, I'm exploring the intriguing realm of quantum mechanics. I'm also thrilled about the concept of <strong>web3</strong> and <strong>decentralization</strong>. I'm on a journey to grasp the fundamentals of web3, which promises a world of exciting possibilities.
       </p>
       <p>
-        In a world filled with <i><strong>complexity</strong></i>, I prioritize <i><strong>simplicity</strong></i>, <i><strong>efficiency</strong></i>and <i>scalability</i>(lies,that is something I'm still learning). Join me on this adventure as we create fantastic apps that are user-friendly and clever. Feel free to reach out to me on <a href='https://twitter.com/saurabhjesingh'>Twitter</a> and <a href='https://www.linkedin.com/in/saurabhje/'>LinkedIn</a>. And don't worry, I'm not too serious – I'm always up for a good laugh. 😄
+        In a world filled with <i><strong>complexity</strong></i>, I prioritize <i><strong>simplicity</strong></i>, <i><strong>efficiency</strong></i> and <i>scalability</i> (lies,that is something I'm still learning). Join me on this adventure as we create fantastic apps that are user-friendly and clever. Feel free to reach out to me on <a href='https://twitter.com/saurabhjesingh'>Twitter</a> and <a href='https://www.linkedin.com/in/saurabhje/'>LinkedIn</a>. And don't worry, I'm not too serious – I'm always up for a good laugh. 😄
       </p>
 
         <p>
