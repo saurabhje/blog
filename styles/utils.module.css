@@ -86,15 +86,17 @@
 }
 
 .customList {
-  list-style: none; /* Remove default list style */
+  list-style: none; 
   padding-left: 1.5rem;
 }
+
 
 .customList li::before {
   content: '•';
   color: #adadad;
   margin-right: 0.5em;
 }
+
 .ListItems{
   margin: 0 0 0.8rem 
 }

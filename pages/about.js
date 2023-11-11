@@ -74,11 +74,8 @@ export default function About() {
                     </p>    
                 </li>
                 <li className={utilStyles.ListItems}>
-                        <strong>College</strong>
-                        <p>Studying computer science engineering with specialization in Artificial intelligence
-                            Started going to college. Made a friend there, another delusional ahole like me.
-                            then made another friend and another. That about it, way over my socialising energy.
-                        </p> 
+                    <strong>College</strong>
+                    <p>Studying computer science engineering with specialization in Artificial intelligence. Started going to college. Made a friend there, another delusional ahole like me. Then made another friend and another. That's about it, way over my socializing energy.</p>
                 </li>
             </ul>
         </section>
