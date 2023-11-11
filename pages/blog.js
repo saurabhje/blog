@@ -21,19 +21,19 @@ export default function Blog({allPostsData}) {
         <title>All blogs</title>
       </Head>
       <div className={utilStyles.headingMd}>
-        <h1 className={utilStyles.heading2Xl}>All Blog Posts</h1>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ slug, date, title , _id}) => (
-            <li className={utilStyles.listItem} key={_id}>
-              <Link href={`/${slug.current}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+        <h1 >📰Blog Posts</h1>
+        <section className={`${utilStyles.headingMd} ${utilStyles.paddingLeft}`}>
+            <ul className={utilStyles.list}>
+                {allPostsData.map(({ slug, date, title , _id}) => (
+                    <li className={utilStyles.listItem} key={_id}>
+                        <Link href={`/${slug.current}`}>{title}</Link>
+                        <br />
+                        <small className={utilStyles.lightText}>
+                            <Date dateString={date} />
+                        </small>
+                    </li>
+                ))}
+            </ul>
       </section>
       </div>
     </Layout>

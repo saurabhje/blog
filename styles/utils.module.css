@@ -46,9 +46,6 @@
   color: inherit;
 }
 
-.padding1px {
-  padding-top: 1px;
-}
 .paddingLeft{
   padding-left: 2rem;
 }
@@ -129,6 +126,9 @@
   .aboutheading{
     font-size: 1.3rem;
     line-height: 1.5;
+  }
+  .paddingLeft{
+    padding-left: 1rem;
   }
   .navbar{
     margin-bottom: 2rem;
