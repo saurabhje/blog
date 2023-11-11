@@ -1,5 +1,5 @@
 import { PortableText } from "@portabletext/react";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import { getIdPost, urlFor } from "../sanity/sanity.utils"; // Import imageUrl correctly
 import Head from 'next/head';
 import Date from "../components/date";

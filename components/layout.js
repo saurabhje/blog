@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Navbar from './navbar';
 
 const name = 'Megamind Je';
 export const siteTitle = "Je's Blog";
@@ -26,6 +27,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <Navbar/>
       <header className={styles.header}>
         {home ? (
           <>
@@ -52,9 +54,7 @@ export default function Layout({ children, home }) {
               />
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
                 {name}
-              </Link>
             </h2>
           </>
         )}

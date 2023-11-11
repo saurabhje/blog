@@ -1,5 +1,5 @@
 .container {
-  max-width: 50rem;
+  max-width: 55rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 }
@@ -11,12 +11,12 @@
 }
 
 .backToHome {
-  font-size: larger;
+  font-size: 1.3rem;
   margin: 3rem 0 0;
 }
 @media screen and (max-width: 450px) {
   .backToHome{
-    font-size: small;
+    font-size: 1rem;
   }
 }
 
