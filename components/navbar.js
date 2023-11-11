@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className={utilStyles.navbar}>
         <a href="/blog"className={utilStyles.headingMd}>Blog</a>
         <a href="/about" className={utilStyles.headingMd}>About</a>
-        <a href="#"className={utilStyles.headingMd}>Contact</a>
+        <a href="/contact"className={utilStyles.headingMd}>Contact</a>
     </div>
   )
 }
