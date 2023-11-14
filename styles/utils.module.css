@@ -47,7 +47,7 @@
 }
 
 .paddingLeft{
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .margin{
   margin: 4rem 0;
@@ -126,9 +126,6 @@
   .aboutheading{
     font-size: 1.3rem;
     line-height: 1.5;
-  }
-  .paddingLeft{
-    padding-left: 1rem;
   }
   .navbar{
     margin-bottom: 2rem;
