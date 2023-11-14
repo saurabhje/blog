@@ -48,7 +48,7 @@ export default function About() {
                 </li>
                 <li className={utilStyles.ListItems}>
                     <strong>Colloborative Project</strong>
-                    <p> After learning the HTML,CSS,Javscript and React and completing doing dozens of JS and React projects, I and Bsf decide to start working on our Personal Project
+                    <p> After learning the HTML,CSS,Javscript and React and completing doing dozens of JS and React projects, I and Bsf decide to start working on our Personal Project.
                     </p>     
                 </li>
                 <li className={utilStyles.ListItems}>
