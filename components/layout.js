@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Navbar from './navbar';
 
 const name = 'Megamind Je';
-export const siteTitle = "Je's Blog";
+export const siteTitle = "Saurabhje";
 
 export default function Layout({ children, home }) {
   return (
