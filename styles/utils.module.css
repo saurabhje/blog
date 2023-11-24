@@ -105,6 +105,9 @@
     font-size: 1.3rem;
     font-weight: 400;
   }
+  .paddingLeft{
+    padding-left: 0;
+  }
   .heading2Xl{
     font-size: 2rem;
   }
