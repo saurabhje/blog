@@ -47,7 +47,7 @@
 }
 
 .paddingLeft{
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 .margin{
   margin: 4rem 0;
@@ -80,6 +80,7 @@
 }
 .navbar a{
   color: #666;
+  text-decoration-thickness: 3px;
 }
 
 .customList {
