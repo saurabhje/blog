@@ -52,7 +52,9 @@
 .margin{
   margin: 4rem 0;
 }
-
+.sliding{
+  animation: 1s sliding ;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -140,5 +142,17 @@
   }
   .ListItems{
     margin: 0 0 0.4rem 
+  }
+}
+
+@keyframes sliding{
+  0%{
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+
+  100%{
+      transform: translateY(0);
+      opacity: 1;
   }
 }

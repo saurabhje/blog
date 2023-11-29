@@ -35,6 +35,17 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.margin}`}>
+        <h2 className={utilStyles.headingLg}>Projects</h2>
+        <ul className={utilStyles.list}>
+          <li className={utilStyles.listItem}>
+            <a href='#'>Code Board</a> A place for developers to copy or paste simple code snippets
+          </li>
+          <li className={utilStyles.listItem}>
+            <a href='https://thethirdfront.vercel.app/'>The Third Front</a> A simple satire News site, where I and a friend try to tackle serious issues with our broken humour
+          </li>
+        </ul>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.margin}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {limitedPosts.map(({ slug, date, title , _id}) => (

@@ -17,15 +17,6 @@ export default function Layout({ children, home }) {
           name="description"
           content="Personal Blog of Saurabh Je Singh"
         />
-        <meta name="google-adsense-account" content="ca-pub-4293736310804112" />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Navbar/>
       <header className={styles.header}>
@@ -39,7 +30,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={`${utilStyles.heading2Xl} ${utilStyles.sliding}`}>{name}</h1>
           </>
         ) : (
           <>
