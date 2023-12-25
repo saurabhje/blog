@@ -104,24 +104,24 @@
 
 @media screen and (max-width: 450px) {
   .headingXl{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
   }
   .paddingLeft{
     padding-left: 0;
   }
   .heading2Xl{
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .headingMd{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .headingXlPost{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
   .headingLg{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
   .lightText {
     font-size: 0.9rem;
@@ -130,7 +130,7 @@
     border-radius: 5px;
   }
   .aboutheading{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.5;
   }
   .navbar{
