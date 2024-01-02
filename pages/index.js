@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>
-            <a href='#'>Code Board</a> A place for developers to copy or paste simple code snippets
+            <a href='https://code-board-three.vercel.app/'>Code Board</a> A place for developers to copy or paste simple code snippets
           </li>
           <li className={utilStyles.listItem}>
             <a href='https://thethirdfront.vercel.app/'>The Third Front</a> A simple satire News site, where I and a friend try to tackle serious issues with our broken humour
