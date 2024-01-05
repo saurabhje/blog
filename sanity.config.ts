@@ -2,6 +2,7 @@ import {defineConfig} from 'sanity'
 import {deskTool } from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import project from './sanity/schemas/project-schema';
+import timeLine from './sanity/schemas/TimeLine';
 
 
 const config = defineConfig({
@@ -12,9 +13,9 @@ const config = defineConfig({
   dataset: 'production',
   apiVersion : '2023-10-24',
   plugins: [deskTool() , visionTool()],
-  useCdn: false,
+  useCdn: true,
   basePath: '/admin',
-  schema: { types: [project] }
+  schema: { types: [project, timeLine] }
 })
 
 export default config;

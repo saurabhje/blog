@@ -1,5 +1,5 @@
 import { createClient } from "next-sanity";
-const projectId = 'zwfkz1cc';
+const projectId = 'zwfkz1cc'; //its okay you can steal it.
 const dataset = 'production';
 const apiVersion = '2023-10-24';
 

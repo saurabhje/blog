@@ -21,7 +21,7 @@ export default function Blog({allPostsData}) {
         <title>All blogs</title>
       </Head>
       <div className={utilStyles.headingMd}>
-        <h1 >📰Blog Posts</h1>
+        <h1 className={utilStyles.headingLg}>📰Blog Posts</h1>
         <section className={`${utilStyles.headingMd} ${utilStyles.paddingLeft}`}>
             <ul className={utilStyles.list}>
                 {allPostsData.map(({ slug, date, title , _id}) => (

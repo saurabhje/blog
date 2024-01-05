@@ -42,7 +42,7 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <div className="articleText">
+        <div>
           <PortableText value={postData.content} components={PortableTextComponent} />
         </div>
       </article>
