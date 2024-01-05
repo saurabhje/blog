@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { PortableText,serializers } from "@portabletext/react";
+import { PortableText } from "@portabletext/react";
 import Layout from "../components/layout";
 import utilStyles from '../styles/utils.module.css'
 import { getTimeLine } from "../sanity/sanity.utils";
@@ -52,11 +52,10 @@ export default function About({ timelineData, }) {
             <div key={entry}>
               <h3 className={utilStyles.headingMd}>{entry.year}</h3>
               <ul className={utilStyles.customList}>
-                {entry.events.map((event, index) => (
+                {entry.events.reverse().map((event, index) => (
                   <li className={utilStyles.ListItems} key={index}>
                     <strong>{event.title}</strong>
-                    {console.log(event.description)}
-                    <PortableText value={event.description} />
+                    <PortableText value={event.description} suppressHydrationWarning />
                   </li>
                 ))}
               </ul>

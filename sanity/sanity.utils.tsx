@@ -36,7 +36,6 @@ export const getTimeLine = async () => {
   const query = `*[_type == "timeline"] | order(year desc) { year, events }`;
   const timeLineData = await Client.fetch(query);
   return timeLineData as Entry;
-  console.log(timeLineData)
 }
 
 export function urlFor(source: any) {
