@@ -33,13 +33,11 @@ export default function About({ timelineData, }) {
           <h1 className={utilStyles.aboutheading}>🛠️ Personal Tools </h1>
           <ul className={utilStyles.customList}>
             <li className={utilStyles.ListItems}>
-              <strong>Main Machine</strong>: <a href="https://learn.microsoft.com/en-us/windows/wsl/about">Windows-Wsl + R5</a>
+              <strong>Main Machine</strong>: <del><a href="https://learn.microsoft.com/en-us/windows/wsl/about">Windows-Wsl + R5</a></del> <ins><a href="https://archlinux.org/">Arch Linux</a> + <a href="https://ohmyz.sh/">Zsh</a></ins>
             </li>
+
             <li className={utilStyles.ListItems}>
-              <strong>Dildo</strong>: Nah! I don't use any.
-            </li>
-            <li className={utilStyles.ListItems}>
-              <strong>Editor</strong>: <a href="https://code.visualstudio.com/">VSC</a>
+              <strong>Editor</strong>: <a href="https://code.visualstudio.com/">VSC</a> and <a href="https://www.vim.org/">vim</a>
             </li>
             <li className={utilStyles.ListItems}>
               <strong>Laptop</strong>: <a href="https://www.dellstore.com/vostro-14-3405-laptop-d552202win9d.html">Dell Vostro</a>
